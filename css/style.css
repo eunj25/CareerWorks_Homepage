@@ -108,8 +108,10 @@ section.business .tab-btn.is-active {
 section.business .tab-contents {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 section.business .tab-content {
+  position: absolute;
   width: 100%;
   height: 100%;
   background-size: cover;
