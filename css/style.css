@@ -92,7 +92,7 @@ section.business .tabs {
 }
 section.business .tab-buttons {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -122,12 +122,14 @@ section.business .tab-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 38px;
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   /* display: none; */
-  transition: opacity .3s ease;
+  transition: opacity .2s ease;
+  background-color: #374151;
 }
 section.business .tab-content.active {
   opacity: 1;
@@ -156,8 +158,88 @@ section.business .tab-content.tab4 {
 section.business .content-box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  gap: 150px;
+}
+section.business .content-box .text-box {
+  flex: 1;
+}
+section.business .content-box .text-box h3 {
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+section.business .content-box .text-box .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+section.business .content-box .img-box {
+  width: 670px;
+  margin-top: 0;
+}
+section.business .pocess-items {
+  display: flex;
+  gap: 40px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+section.business .process-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  padding: 12px 24px;
+  background: #fff;
+  border-radius: var(--border-radius);
+
+  font-size: var(--body02-size);
+  font-weight: 500;
+  color: var(--bk);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+section.business .processe-tit {
+  position: relative;
+  padding-left: 18px;
+  font-weight: 600;
+  color: var(--wh);
 }
 
+/* 앞에 점 */
+section.business .processe-tit::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--wh);
+}
+section.business .process-item:last-child::after {
+  display: none;
+} 
+/* 점 2개 */
+section.business .process-item::after {
+  content: '';
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--wh);
+
+  box-shadow: 12px 0 0 var(--wh);
+}
 
 section.partner {
   background-image: url("../images/partner_bg.png");
