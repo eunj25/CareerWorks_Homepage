@@ -152,22 +152,26 @@
   }
 
   .tab-btn {
+    width: 310px;
     padding: var(--tabBtn-padding);
-    border: 1px solid var(--primary);
+    border: none;
     border-radius: var(--border-radius);
-    background: transparent;
-    color: var(--primary);
-    font-size: var(--h5-size);
+    background: var(--wh);
+    color: #919191;
+    opacity: .7;
+    font-size: 20px;
     cursor: pointer;
-    transition: .3s;
+    transition: .2s;
   }
   .tab-btn:hover {
     background: var(--tabBtn-bg);
     color: var(--wh);
+    opacity: 1;
   }
   .tab-btn.active {
     background: var(--tabBtn-bg);
     color: var(--wh);
+    opacity: 1;
   }
 
   /* 오버레이 */
