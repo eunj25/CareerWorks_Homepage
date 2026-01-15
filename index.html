@@ -107,6 +107,119 @@
      </div>
     </section>
 
+    <!-- 모달 오버레이 -->
+    <div class="modal-overlay" id="outsourcingModal">
+      <div class="modal">
+        <!-- 헤더 -->
+        <div class="modal-header">
+          <h5>아웃소싱 활동분야</h5>
+          <button class="modal-close" aria-label="닫기">&times;</button>
+        </div>
+        <!-- 콘텐츠 -->
+        <div class="modal-content">
+          <table class="modal-table">
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>활용 분야</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>인적자원</td>
+                <td>헤드헌팅, 채용대행, 교육/연수 대행, 인사관리 컨설팅</td>
+              </tr>
+              <tr>
+                <td>생산관리</td>
+                <td>물품 생산, 제조, 검사, 포장, 상/하차</td>
+              </tr>
+              <tr>
+                <td>용역</td>
+                <td>건물/시설물관리, 경비보안, 환경</td>
+              </tr>
+              <tr>
+                <td>세무/회계/재무</td>
+                <td>세무/회계/재무업무대행, 기업 설립 대행</td>
+              </tr>
+              <tr>
+                <td>호텔 및 레저</td>
+                <td>프론트, 객실, 미화, 피트니스, 연회, 시설, 차량 대행</td>
+              </tr>
+              <tr>
+                <td>총무/관리지원</td>
+                <td>총무일반대행, 해외업무대행, 단체급식대행, 행사대행, 통역/번역대행</td>
+              </tr>
+              <tr>
+                <td>유통/물류</td>
+                <td>영업판촉, 텔레마케팅, 재고조사, 종합물류대행, 택배서비스</td>
+              </tr>
+              <tr>
+                <td>IT정보기술</td>
+                <td>정보시스템, 인터넷결제, ASP제공, 정보보안, 콜센터 구축</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- 모달 오버레이 -->
+    <div class="modal-overlay" id="PDModal">
+      <div class="modal">
+        <!-- 헤더 -->
+        <div class="modal-header">
+          <h5>인재파견 활동분야</h5>
+          <button class="modal-close" aria-label="닫기">&times;</button>
+        </div>
+        <!-- 콘텐츠 -->
+        <div class="modal-content">
+          <table class="modal-table">
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>활용 분야</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>인적자원</td>
+                <td>헤드헌팅, 채용대행, 교육/연수 대행, 인사관리 컨설팅</td>
+              </tr>
+              <tr>
+                <td>생산관리</td>
+                <td>물품 생산, 제조, 검사, 포장, 상/하차</td>
+              </tr>
+              <tr>
+                <td>용역</td>
+                <td>건물/시설물관리, 경비보안, 환경</td>
+              </tr>
+              <tr>
+                <td>세무/회계/재무</td>
+                <td>세무/회계/재무업무대행, 기업 설립 대행</td>
+              </tr>
+              <tr>
+                <td>호텔 및 레저</td>
+                <td>프론트, 객실, 미화, 피트니스, 연회, 시설, 차량 대행</td>
+              </tr>
+              <tr>
+                <td>총무/관리지원</td>
+                <td>총무일반대행, 해외업무대행, 단체급식대행, 행사대행, 통역/번역대행</td>
+              </tr>
+              <tr>
+                <td>유통/물류</td>
+                <td>영업판촉, 텔레마케팅, 재고조사, 종합물류대행, 택배서비스</td>
+              </tr>
+              <tr>
+                <td>IT정보기술</td>
+                <td>정보시스템, 인터넷결제, ASP제공, 정보보안, 콜센터 구축</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <section class="business section section-3" id="business">
       <div class="tabs">
         <!-- tab buttons -->
@@ -154,7 +267,7 @@
                   서비스 공급업체가 업무의 기획/설계/운영까지의 서비스를 공급합니다.<br> 이는 기업 내부의 비핵심 및 경쟁력이 낮은 부문이나 기능은<br>
                   외부 기업에 맡겨 효율성 및 전문성을 증대시키고 동시에 미래에도<br> 경쟁력의 밑거름이 될 수 있는 부문에 경영지원을 집중하여 핵심 역량으로 키우는데 목표를 두고 있습니다.
                 </h5>
-                <div class="btn modal">활용분야 알아보기<span class="material-symbols-outlined">arrow_outward</span></div>
+                <div class="btn modal-trigger" data-modal="outsourcingModal" role="button" >활용분야 알아보기<span class="material-symbols-outlined">arrow_outward</span></div>
               </div>
               <div class="img-box"><img src="./images/business/tab_item_1.png" alt=""></div>
             </div>
@@ -181,7 +294,8 @@
                   그 고용관계를 유지하면서 근로자 파견계약의 내용에 따라 사용 사업주의 지휘명령을 받아 사용 사업주를 위한
                   근로에 종사하게하는 고용형태를 말합니다.
                 </h5>
-                <div class="btn modal">활용분야 알아보기<span class="material-symbols-outlined">arrow_outward</span></div>
+                <div class="btn modal-trigger" data-modal="PDModal" role="button">활용분야 알아보기<span
+                    class="material-symbols-outlined">arrow_outward</span></div>
               </div>
               <div class="img-box"><img src="./images/business/tab_item_2.png" alt=""></div>
             </div>
@@ -347,6 +461,7 @@
     <div>© 2026 CAREERWORKS Co., Ltd. All Rights Reserved..</div>
   </footer>
 
+  
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       
@@ -412,20 +527,37 @@
         });
       });
 
-      // const tabBtns = document.querySelectorAll('.tab-btn');
-      // const tabContents = document.querySelectorAll('.tab-content');
+      // modal
+      const modalTriggers = document.querySelectorAll('.modal-trigger');
+      const modals = document.querySelectorAll('.modal-overlay');
 
-      // tabBtns.forEach((btn, index) => {
-      //   btn.addEventListener('click', () => {
-      //     tabBtns.forEach(b => b.classList.remove('active'));
-      //     tabContents.forEach(c => c.classList.remove('active'));
+      function openModal(modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
 
-      //     btn.classList.add('active');
-      //     tabContents[index].classList.add('active');
-      //   });
-      // });
+      function closeModal(modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
 
+      // 열기
+      modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const modalId = trigger.dataset.modal;
+          const targetModal = document.getElementById(modalId);
+          if (targetModal) openModal(targetModal);
+        });
+      });
 
+      // 닫기
+      modals.forEach(modal => {
+        modal.addEventListener('click', e => {
+          if (e.target === modal || e.target.closest('.modal-close')) {
+            closeModal(modal);
+          }
+        });
+      });
     });
   </script>
 
