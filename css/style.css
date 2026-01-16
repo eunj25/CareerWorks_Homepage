@@ -285,12 +285,13 @@ section.contact .content-box {
   width: 100%;
 }
 section.contact .img-box {
-  width: 763px;
-  height: 743px;
+  /* width: 763px;
+  height: 743px; */
   flex: 1;
   border-radius: 40px;
   overflow: hidden;
   background-color: #374151;
+  aspect-ratio: 1 / 1;
 }
 section.contact .img-box img {
   width: 100%;
