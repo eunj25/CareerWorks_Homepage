@@ -436,7 +436,7 @@
             <p><span class="material-symbols-outlined">mail</span>cwinsa@naver.com</p>
             <p><span class="material-symbols-outlined">call</span>02-3272-7747</p>
             <p><span class="material-symbols-outlined">print</span>02-3272-7748</p>
-            <p><span class="material-symbols-outlined">location_on</span>서울시 마포구 마포대로 14길 19-1 2층 (공덕동, 그랜드빌딩)</p>
+            <p><span class="material-symbols-outlined">location_on</span>서울특별시 마포구 마포대로 14길 19-1 2층 (공덕동, 그랜드빌딩)</p>
           </div>
         </div>
       </div>
@@ -448,16 +448,16 @@
     <div class="inner">
       <div class="info-box">
         <div>
-          <div class="info"><span>상호</span>커리어웍스</div>
-          <div class="info"><span>대표자</span>대표자</div>
-          <div class="info"><span>사업자번호</span>111-222-33333</div>
+          <div class="info"><span>상호</span>주식회사 커리어웍스</div>
+          <div class="info"><span>대표자</span>박동석</div>
+          <div class="info"><span>사업자번호</span>105-87-74467</div>
         </div>
         <div><div class="info"><span>Email</span>cwinsa@naver.com</div></div>
         <div>
           <div class="info"><span>TEL</span>02-3272-7747</div>
           <div class="info"><span>FAX</span>02-3272-7748</div>
         </div>
-        <div class="info">서울시 마포구 마포대로 14길 19-1 2층 (공덕동, 그랜드빌딩)</div>
+        <div class="info">서울특별시 마포구 마포대로 14길 19-1 2층 (공덕동, 그랜드빌딩)</div>
       </div>
       <div class="logo">
         <a href="/"><img src="./images/logo_wh.svg" alt="커리어웍스 로고"></a>
@@ -471,6 +471,26 @@
     document.addEventListener('DOMContentLoaded', () => {
       
       const header = document.querySelector('.header');
+      const hamburger = document.getElementById("hamburger-btn");
+      const navMenu = document.getElementById("nav-menu"); // 메뉴 영역 ID
+      const overlay = document.getElementById("menu-overlay");
+      
+      if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+          hamburger.classList.toggle("active");
+          overlay.classList.toggle("active");
+        });
+
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(link => {
+          link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+            hamburger.classList.remove("active");
+            overlay.classList.remove("active");
+          });
+        });
+      }
 
       window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {

@@ -9,7 +9,7 @@
 
   --header-padding: 20px 40px;
 
-  --badge-text: #FF912C;
+  --badge-text: #ffe2d1;
   --badge-border: var(--primary);
   --badge-bg: rgba(230, 120, 20, 0.25);
   --badge-padding: 6px 24px;
@@ -147,7 +147,7 @@
     color: var(--badge-text);
     border-radius: var(--border-radius);
     padding: var(--badge-padding);
-    font-size: var(--body02-size);
+    font-size: var(--body01-size);
     text-transform: capitalize;
   }
 
@@ -307,7 +307,48 @@
 
     font-size: var(--h6-size);
     color: var(--wh);
+    background-color: var(--secondary);
   }
+  
+  /* 햄버거 아이콘은 데스크탑에서 숨김 */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: .3125rem;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 1.5625rem;
+    height: .1875rem;
+    background-color: #fff;
+    border-radius: .1875rem;
+    transition: all 0.3s ease;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(29, 29, 29, 0.5);
+    backdrop-filter: blur(.625rem);
+    -webkit-backdrop-filter: blur(.625rem);
+    z-index: 999;
+
+    /* 애니메이션 */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
   /* ==== section */
   .fullpage {
     /*height: 100vh;
