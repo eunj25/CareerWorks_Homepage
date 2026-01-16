@@ -116,8 +116,20 @@ section.about .img-box {
 }
 
 @media (max-width: 768px) {
+  .fullpage {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
   section.intro {
     height: 80vh ;
+  }
+  section.intro p {
+    font-size: var(--h4-size);
+  }
+  section.intro p.mb-font {
+    font-size: var(--h6-size);
   }
   section.about {
     height: auto;
@@ -131,6 +143,10 @@ section.about .img-box {
   section.about .desc-box {
     padding-left: 0;
   }
+  section.about .img-box {
+    width: 100%;
+  }
+
   section.business {  
     display: none;
     height: auto;
