@@ -64,6 +64,7 @@ section.about .img-box {
   flex: 1;
   position: relative;
   z-index: 1;
+  margin-top: 0;
 }
 section.about .img-box::after {
   position: absolute;
@@ -180,7 +181,7 @@ section.business .content-box .text-box .btn {
   margin-top: 20px;
 }
 section.business .content-box .img-box {
-  width: 670px;
+  width: clamp(320px, 60vw, 650px);
   margin-top: 0;
 }
 section.business .pocess-items {
