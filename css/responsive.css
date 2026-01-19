@@ -32,10 +32,6 @@
   section.business {
     height: 1280px;
   }
-  section.business .tab-content {
-    padding: 160PX 20px;
-    justify-content: flex-start;
-  }
   section.business .tab-buttons {
     gap: 4vw;
     top: 6%;
@@ -48,6 +44,10 @@
   section.business .tab-buttons::-webkit-scrollbar {
     display: none;
   }
+  section.business .tab-content {
+    padding: 160PX 20px;
+    justify-content: flex-start;
+  }
   section.business .content-box {
     flex-direction: column;
     align-items: flex-start;
@@ -57,9 +57,9 @@
     order: 1;
   }
 
-  section.business .pocess-items {
+  section.business .process-items {
     width: 100%;
-    overflow-y: scroll;
+    overflow-x: scroll;
     flex-wrap: nowrap;
   }
   section.business .process-item {
@@ -69,15 +69,7 @@
   section.business .content-box .img-box {
     width: clamp(320px, 60vw, 500px);
   }
-  section.business .tab-buttons {
-    gap: 4vw;
-    top: 6%;
-    width: 100%;
-    padding: 0 4vw;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+
   section.partner {
     height: auto;
     padding: 80px 20px;
@@ -101,19 +93,19 @@
       padding: 80px 20px;
     }
   
-    section.about .content-box {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 40px;
-    }
-  
-    section.about .desc-box {
-      padding-left: 0;
-    }
-  
-    section.about .img-box {
-      width: 100%;
-    }
+  section.about .content-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  section.about .desc-box {
+    padding-left: 0;
+  }
+
+  section.about .img-box {
+    width: 100%;
+  }
 
 }
 
@@ -228,6 +220,10 @@
   section.intro p.mb-font {
     font-size: var(--h6-size);
   }
+
+  section.business {
+    height: auto;
+  }
   .tab-btn {
     width: auto;
     font-size: 14px;
@@ -236,6 +232,47 @@
     order: 0;
     width: 100%;
   }
+
+  .modal-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    /* 모바일 관성 스크롤 */
+  }
+  .modal-table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .modal-table th,
+  .modal-table td {
+    white-space: nowrap;
+  }
+  .modal-table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .modal-table th,
+  .modal-table td {
+    white-space: nowrap;
+  }
+  .modal-content {
+    position: relative;
+  }
+  .modal-content::after {
+    content: '';
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
+  }
+
   section.contact .content-box {
     flex-direction: column;
     align-items: flex-start;
