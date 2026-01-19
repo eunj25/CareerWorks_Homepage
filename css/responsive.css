@@ -20,7 +20,10 @@
     /* height: auto; */
     /* padding: 20vw clamp(40px, 5vw, 100px); */
   }
-
+  section.about {
+    height: auto;
+    padding: 160px clamp(60px, 6vw, 140px);
+  }
   section.about .desc-box {
     padding-left: 0;
     flex: 1.2;
@@ -30,7 +33,7 @@
     margin-top: 0;
   }
   section.business {
-    height: 1280px;
+    height: auto;
   }
   section.business .tab-buttons {
     gap: 4vw;
@@ -45,30 +48,9 @@
     display: none;
   }
   section.business .tab-content {
-    padding: 160PX 20px;
+    padding: 160PX 80px;
     padding-bottom: 40px;
-    justify-content: flex-start;
-  }
-  section.business .tab-content.tab1 h5 br {
-    display: none;
-  }
-  section.business .content-box {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-  }
-  section.business .content-box .text-box {
-    order: 1;
-  }
-
-  section.business .process-items {
-    width: 100%;
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-  }
-  section.business .process-item {
-    width: auto;
-    white-space: nowrap;
+    /* justify-content: flex-start; */
   }
   section.business .content-box .img-box {
     width: clamp(320px, 60vw, 500px);
@@ -87,30 +69,50 @@
   }
   section.contact {
     height: auto;
-    padding: 80px 20px;
+    padding: 80px;
   }
 }
 
 @media (max-width: 1024px) {
   section.about {
-      height: auto;
-      padding: 80px 20px;
-    }
-  
+    height: auto;
+    padding: 80px 20px;
+  }
   section.about .content-box {
-    flex-direction: column;
     align-items: flex-start;
     gap: 40px;
   }
-
   section.about .desc-box {
     padding-left: 0;
   }
-
   section.about .img-box {
     width: 100%;
   }
 
+  section.business .content-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  section.business .content-box .text-box {
+    order: 1;
+  }
+  section.business .tab-content {
+    padding: 160PX 20px;
+  }
+  section.business .tab-content.tab1 h5 br {
+    display: none;
+  }
+  section.business .process-items {
+    width: 100%;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+
+  section.business .process-item {
+    width: auto;
+    white-space: nowrap;
+  }
 }
 
 /* ============ MOBILE HEADER ============ */
@@ -225,6 +227,13 @@
     font-size: var(--h6-size);
   }
 
+  section.about .content-box {
+    flex-direction: column;
+  }
+  section.about .img-box {
+    width: 86%;
+    margin: auto;
+  }
   section.business {
     height: auto;
   }
@@ -277,6 +286,9 @@
     background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
   }
 
+  section.contact {
+    padding: 80PX 20px;
+  }
   section.contact .content-box {
     flex-direction: column;
     align-items: flex-start;
