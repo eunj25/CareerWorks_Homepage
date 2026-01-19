@@ -20,15 +20,100 @@
     /* height: auto; */
     /* padding: 20vw clamp(40px, 5vw, 100px); */
   }
-section.about .img-box {
-  width: 450px;
-  margin-top: 0;
-}
+
+  section.about .desc-box {
+    padding-left: 0;
+    flex: 1.2;
+  }
+  section.about .img-box {
+    width: 450px;
+    margin-top: 0;
+  }
+  section.business {
+    height: 1280px;
+  }
+  section.business .tab-content {
+    padding: 160PX 20px;
+    justify-content: flex-start;
+  }
+  section.business .tab-buttons {
+    gap: 4vw;
+    top: 6%;
+    width: 100%;
+    padding: 0 4vw;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  section.business .tab-buttons::-webkit-scrollbar {
+    display: none;
+  }
+  section.business .content-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  section.business .content-box .text-box {
+    order: 1;
+  }
+
+  section.business .pocess-items {
+    width: 100%;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+  }
+  section.business .process-item {
+    width: auto;
+    white-space: nowrap;
+  }
   section.business .content-box .img-box {
     width: clamp(320px, 60vw, 500px);
   }
+  section.business .tab-buttons {
+    gap: 4vw;
+    top: 6%;
+    width: 100%;
+    padding: 0 4vw;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  section.partner {
+    height: auto;
+    padding: 80px 20px;
+  }
+  section.partner .img-box {
+    width: 100%;
+    justify-content: center;
+  }
+  section.partner .logo-wrap {
+    aspect-ratio: 154 / 50;
+  }
+  section.contact {
+    height: auto;
+    padding: 80px 20px;
+  }
 }
+
 @media (max-width: 1024px) {
+  section.about {
+      height: auto;
+      padding: 80px 20px;
+    }
+  
+    section.about .content-box {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  
+    section.about .desc-box {
+      padding-left: 0;
+    }
+  
+    section.about .img-box {
+      width: 100%;
+    }
 
 }
 
@@ -143,85 +228,17 @@ section.about .img-box {
   section.intro p.mb-font {
     font-size: var(--h6-size);
   }
-  section.about {
-    height: auto;
-    padding: 80px 20px;
-  }
-  section.about .content-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  section.about .desc-box {
-    padding-left: 0;
-  }
-  section.about .img-box {
-    width: 100%;
-  }
-
-  section.business {  
-    height: 1280px;
-  }
-  section.business .tab-content {
-    padding: 160PX 20px;
-    justify-content: flex-start;
-  }
-  section.business .tab-buttons {
-    gap: 4vw;
-    top: 6%;
-    width: 100%;
-    padding: 0 4vw;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  section.business .tab-buttons::-webkit-scrollbar {
-    display: none;
-  }
   .tab-btn {
     width: auto;
     font-size: 14px;
-  }
-  section.business .content-box {
-    flex-direction: column; 
-    align-items: start;
-    gap: 40px;
-  }
-  section.business .content-box .text-box {
-    order: 1;
   }
   section.business .content-box .img-box {
     order: 0;
     width: 100%;
   }
-  section.business .pocess-items {
-    width: 100%;
-    overflow-y: scroll;
-    flex-wrap: nowrap;
-  }
-  section.business .process-item {
-    width: auto;
-  }
-  section.partner {
-    height: auto;
-    padding: 80px 20px;
-  }
-  section.partner .img-box {
-    width: 100%;
-    justify-content: center;
-  }
-  section.partner .logo-wrap {
-    aspect-ratio: 154 / 50;
-  }
-
-  section.contact {
-    height: auto;
-    padding: 80px 20px;
-  }
   section.contact .content-box {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
   }
   section.contact .desc-box .info {
