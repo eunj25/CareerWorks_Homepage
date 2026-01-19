@@ -245,7 +245,9 @@
     order: 0;
     width: 100%;
   }
-
+  section.business .tab-buttons {
+    top: 7%;
+  }
   .modal-content {
     overflow-x: auto;
     overflow-y: hidden;
