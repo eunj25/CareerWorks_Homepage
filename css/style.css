@@ -86,7 +86,7 @@ section.about .desc-box {
 }
 
 section.business {
-  /* position: relative; */
+  position: relative;
 }
 section.business .tabs {
   width: 100%;
@@ -110,7 +110,7 @@ section.business .tab-btn.is-active {
 
 section.business .tab-contents {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: grid;
   background-color: #222;
 }
