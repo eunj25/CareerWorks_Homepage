@@ -37,7 +37,7 @@
   }
   section.business .tab-buttons {
     gap: 4vw;
-    top: 6%;
+    top: 10%;
     width: 100%;
     padding: 0 4vw;
     overflow-y: scroll;
