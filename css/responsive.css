@@ -46,7 +46,11 @@
   }
   section.business .tab-content {
     padding: 160PX 20px;
+    padding-bottom: 40px;
     justify-content: flex-start;
+  }
+  section.business .tab-content.tab1 h5 br {
+    display: none;
   }
   section.business .content-box {
     flex-direction: column;
