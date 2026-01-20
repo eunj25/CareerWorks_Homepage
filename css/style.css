@@ -84,7 +84,9 @@ section.about .desc-box {
   flex: 1;
   padding-left: 140px;
 }
-
+section.about .desc-box h5 {
+  margin-bottom: 20px;
+}
 section.business {
   position: relative;
 }
